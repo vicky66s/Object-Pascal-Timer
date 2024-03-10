@@ -1,0 +1,29 @@
+program Timer;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils, Windows;
+
+var
+  Minutes, Seconds: Integer;
+
+begin
+  Write('Enter the number of minutes: ');
+  Readln(Minutes);
+
+  // Convert minutes to seconds
+  Seconds := Minutes * 60;
+
+  Writeln('Timer started for ', Minutes, ' minutes.');
+
+  // Countdown loop
+  while Seconds > 0 do
+  begin
+    Writeln('Time remaining: ', Seconds, ' seconds.');
+    Sleep(1000); // Sleep for 1 second
+    Dec(Seconds);
+  end;
+
+  Writeln('Time''s up!');
+end.
