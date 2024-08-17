@@ -12,7 +12,7 @@ begin
   Write('Enter the number of minutes: ');
   Readln(Minutes);
 
-  // Convert minutes to seconds.
+  // Convert minutes to seconds.00000
   Seconds := Minutes * 60;
 
   Writeln('Timer started for ', Minutes, ' minutes.');
