@@ -1,4 +1,4 @@
-// 0000000
+// 01
 program Timer;
 
 {$APPTYPE CONSOLE}
